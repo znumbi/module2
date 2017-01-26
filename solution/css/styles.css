@@ -6,9 +6,9 @@
 
  h1 {
  	text-align: center;
- 	font-size: 70px;
+ 	font-size: 1.75rem;
  }
- .less {
+ .title {
  	position: absolute;
  	top: 0;
  	right: 0;
@@ -22,7 +22,7 @@
 
  }
 
- #section1 .contenu, #section2 .contenu, #section3 .contenu {
+ #section1 .content, #section2 .content, #section3 .content {
  	font-size: 1rem;
  	background-color: #0DD37E; 
  	position: relative;
@@ -38,6 +38,46 @@
 
 }
 
+#section2 .title {
+	background-color: #B95B37;
+}
+
+#section3 .title {
+	background-color: #0D4EE1;
+}
+
+/* desktop  */
+@media only screen and (min-width: 992px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 33%;
+	} 
+}
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width: 991px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+	} 
+
+	#section1, #section2 {
+		width: 49.7%;
+	}
+
+	#section3 {
+		width: 100%;
+	}
+
+}
+
+/*mobile*/
+@media only screen and (max-width: 767px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 100%;
+	} 
+
+}
 #section2 .title {
 	background-color: #B95B37;
 }
